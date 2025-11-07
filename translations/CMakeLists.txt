@@ -1,0 +1,8 @@
+file(GLOB_RECURSE FIND_FILE
+    ${CMAKE_CURRENT_LIST_DIR}/*.ts
+)
+
+set_property(
+    GLOBAL APPEND PROPERTY ALL_LANGUAGE 
+    ${FIND_FILE}
+)
