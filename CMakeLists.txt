@@ -1,11 +1,18 @@
 cmake_minimum_required(VERSION 3.19)
 
 set(DEFAULT_TARGET "app")
+set(DEFAULT_APP_VERSION "v0.0.1")
 
 if(DEFINED TARGET_NAME)
     set(CMAKE_PROJECT_NAME ${TARGET_NAME})
 else()
     set(CMAKE_PROJECT_NAME ${DEFAULT_TARGET})
+endif()
+
+if(DEFINED A_VER)
+    set(APP_VERSION ${A_VER})
+else()
+    set(APP_VERSION ${DEFAULT_APP_VERSION})
 endif()
 
 project(${CMAKE_PROJECT_NAME} LANGUAGES CXX)
