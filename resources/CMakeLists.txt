@@ -1,9 +1,5 @@
-add_subdirectory(ui)
-add_subdirectory(core)
-add_subdirectory(utils)
-
 file(GLOB_RECURSE FIND_FILE
-    ${CMAKE_CURRENT_LIST_DIR}/*.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/*.qrc
 )
 
 set_property(GLOBAL APPEND PROPERTY ALL_INCLUDE 
@@ -14,4 +10,3 @@ set_property(
     GLOBAL APPEND PROPERTY ALL_SOURCES 
     ${FIND_FILE}
 )
-

@@ -7,7 +7,7 @@
 - 跨平台构建（Windows / macOS / Linux）
 - CPack 安装包生成
 
-## 📄 License
+## License
 
 本项目基于 GNU General Public License v3.0（GPLv3）发布。
 
